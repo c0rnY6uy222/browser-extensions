@@ -3,7 +3,7 @@ import "./filters.css";
 const Filters = () => {
   return (
     <section className="filters">
-      <p>Extension List</p>
+      <h1>Extensions List</h1>
 
       <section className="buttons">
         <button>All</button>

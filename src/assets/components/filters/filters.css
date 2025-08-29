@@ -5,3 +5,19 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.filters h1 {
+    color: var(--neutral-200);
+    font-weight: var(--font-w-700);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.buttons button {
+    color: var(--neutral-200);
+    outline: 1px solid var(--neutral-600);
+}
