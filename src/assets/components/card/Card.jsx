@@ -1,8 +1,6 @@
-// { image, title, description, active } PUT THIS LATER
-// FIX EVERYTHING (IT'S MESS BRO)
-
 import "./card.css";
 import Console from "../../images/logo-console-plus.svg";
+import Switch from "../switch/Switch";
 
 const Card = () => {
   return (
@@ -16,6 +14,7 @@ const Card = () => {
       </div>
       <div className="btn-group">
         <button className="btn-remove">Remove</button>
+        <Switch />
       </div>
     </section>
   );

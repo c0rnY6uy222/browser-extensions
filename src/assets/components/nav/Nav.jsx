@@ -22,10 +22,10 @@ const Nav = () => {
 
   return (
     <nav>
-      <img src={Logo} />
+      <img src={Logo} className="nav-logo" />
 
       <button>
-        <img src={img} onClick={darkMode} />
+        <img src={img} onClick={darkMode} className="nav-mode-btn" />
       </button>
     </nav>
   );
