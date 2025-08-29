@@ -2,7 +2,6 @@
 // FIX EVERYTHING (IT'S MESS BRO)
 
 import "./card.css";
-import { Switch, Button } from "@mui/material";
 import Console from "../../images/logo-console-plus.svg";
 
 const Card = () => {

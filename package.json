@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://c0rny6uy222.github.io/browser-extensions/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,9 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@mui/material": "^7.3.1",
+    "jest": "^30.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
@@ -25,6 +24,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "react-test-renderer": "^19.1.1",
     "vite": "^7.1.2"
   }
 }
