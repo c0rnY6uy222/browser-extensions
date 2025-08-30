@@ -1,14 +1,21 @@
 nav {
+    min-width: 350px;
     width: calc(100% - 20px);
     height: 40px;
-    padding: 15px;
-    margin: 30px 0;
+    padding: 10px;
+    margin: 40px 0;
 
     border-radius: var(--border-rad);
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     background: var(--neutral-800);
+}
+
+nav button {
+    display: flex;
+    border-radius: 10px;
 }

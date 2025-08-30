@@ -1,0 +1,34 @@
+.switch-container {
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 20px;
+    padding: 2px;
+    background: var(--neutral-700);
+    border-radius: var(--border-rad);
+    cursor: pointer;
+}
+
+.switch-container:hover {
+    background: var(--neutral-600) !important;
+}
+
+.switch-slider-left,
+.switch-slider-right {
+    position: absolute;
+    height: 90%;
+    left: 0;
+    aspect-ratio: 1 / 1;
+    background: var(--neutral-100);
+    border-radius: var(--border-rad);
+}
+
+.switch-slider-right {
+    left: 50%;
+}
+
+.switch-container,
+.switch-slider-left,
+.switch-slider-right {
+    transition: all 100ms ease-in-out;
+}

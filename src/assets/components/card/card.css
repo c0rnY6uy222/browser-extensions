@@ -1,8 +1,9 @@
 .card {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 300px;
+    min-width: 320px;
     max-width: 30%;
     height: 160px;
     background: var(--neutral-800);
@@ -47,5 +48,9 @@
     background: var(--neutral-800);
     outline: 1px solid var(--neutral-600);
     color: var(--neutral-200);
-    text-transform: capitalize;
+}
+
+.btn-remove:hover {
+    background: var(--red-400);
+    color: var(--neutral-900);
 }

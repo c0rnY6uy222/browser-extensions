@@ -1,20 +1,19 @@
 import "./card.css";
-import Console from "../../images/logo-console-plus.svg";
-import Switch from "../switch/Switch";
+import Switch from "./switch/Switch";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <section className="card">
       <div className="text">
-        <img src={Console} />
+        <img src={props.logo} />
         <div className="text-inner">
-          <h1>DevLens</h1>
-          <p>Quickly inspect page layouts and visualize element boundaries</p>
+          <h1>{props.name}</h1>
+          <p>{props.description}</p>
         </div>
       </div>
       <div className="btn-group">
         <button className="btn-remove">Remove</button>
-        <Switch />
+        <Switch isActive={props.isActive} />
       </div>
     </section>
   );

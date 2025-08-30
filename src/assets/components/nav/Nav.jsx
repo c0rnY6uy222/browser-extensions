@@ -1,31 +1,31 @@
-import { useRef, useState } from "react";
-
 import Moon from "../../images/icon-moon.svg";
 import Sun from "../../images/icon-sun.svg";
-import Logo from "../../images/logo.svg";
+import LogoLight from "../../images/logo.svg";
+import LogoDark from "../../images/logo-dark.svg";
 
 import "./nav.css";
+import { useState } from "react";
 
 const Nav = () => {
-  const modeRef = useRef(false);
-  const [img, setImg] = useState(Sun);
+  const [mode, setMode] = useState(false);
 
-  const darkMode = () => {
-    if (img == Sun) {
-      modeRef.current = true;
-      setImg(Moon);
-    } else {
-      modeRef.current = false;
-      setImg(Sun);
-    }
+  const saveTheme = (theme) => {
+    localStorage.setItem("theme", theme);
+
+    console.log(localStorage.getItem("theme"));
+  };
+
+  const changeColorScheme = () => {
+    setMode(!mode);
+    saveTheme(mode);
   };
 
   return (
     <nav>
-      <img src={Logo} className="nav-logo" />
+      <img src={LogoDark} className="nav-logo" />
 
-      <button>
-        <img src={img} onClick={darkMode} className="nav-mode-btn" />
+      <button onClick={changeColorScheme}>
+        <img src={!mode ? Sun : Moon} className="nav-mode-btn" />
       </button>
     </nav>
   );
