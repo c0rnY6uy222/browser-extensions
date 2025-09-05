@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Nav, Filters, Cards } from "./components/components";
 
 const App = () => {
   return (
-    <div>Hello, World!</div>
-  )
-}
+    <main>
+      <Nav />
+      <Filters />
+      <Cards />
+    </main>
+  );
+};
 
-export default App
+export default App;
