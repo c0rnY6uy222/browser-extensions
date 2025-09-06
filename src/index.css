@@ -55,8 +55,11 @@ body {
   color: var(--neutral-100);
 
   font-family: "Noto Sans Regular";
+
+  transition: all 150ms ease-in-out;
 }
 
 #root {
   width: calc(100% - 300px);
+  height: 100%;
 }

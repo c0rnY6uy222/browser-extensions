@@ -19,10 +19,24 @@
   cursor: pointer;
 }
 
-.filters-btn-group input[type="radio"] {
+.filters-btn-group label input[type="radio"] {
   display: none;
 }
 
-.filters-btn-group input[type="radio"]:checked + label {
+.filters-btn-group
+  label
+  input[type="radio"]:checked
+  + .filters-btn-group
+  label {
   background: var(--red-500);
+}
+
+.filters-btn-group label:hover {
+  background: var(--neutral-600);
+}
+
+@media screen and (width <= 375px) {
+  .filters {
+    flex-direction: column;
+  }
 }

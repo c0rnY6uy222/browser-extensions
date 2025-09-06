@@ -20,3 +20,13 @@ nav {
   padding: 15px;
   border-radius: 10px;
 }
+
+.nav-change-theme-btn:hover,
+.nav-change-theme-btn:focus {
+  background: var(--neutral-600);
+}
+
+.nav-change-theme-btn:focus {
+  outline: 2px solid var(--red-500);
+  outline-offset: 2px;
+}
