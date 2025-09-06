@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "./filters.css";
+
 const Filters = () => {
   const [selected, setSelected] = useState("All");
 

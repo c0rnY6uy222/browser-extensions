@@ -1,0 +1,22 @@
+nav {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  background: var(--neutral-800);
+
+  margin: 40px 0;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.nav-change-theme-btn {
+  border: none;
+  cursor: pointer;
+  background: var(--neutral-700);
+  padding: 15px;
+  border-radius: 10px;
+}

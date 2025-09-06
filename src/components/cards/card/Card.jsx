@@ -1,5 +1,7 @@
 import Switch from "./switch/Switch";
 
+import "./card.css";
+
 const Card = (props) => {
   return (
     <section className="card">

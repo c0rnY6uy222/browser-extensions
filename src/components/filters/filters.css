@@ -1,0 +1,28 @@
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.filters-btn-group {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.filters-btn-group label {
+  background: var(--neutral-700);
+  padding: 15px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.filters-btn-group input[type="radio"] {
+  display: none;
+}
+
+.filters-btn-group input[type="radio"]:checked + label {
+  background: var(--red-500);
+}

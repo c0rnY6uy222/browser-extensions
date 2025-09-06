@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 30%;
+  background: var(--neutral-800);
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.card-top,
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-top {
+  gap: 20px;
+}
+
+.card-bottom {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-remove-btn {
+  background: transparent;
+  color: var(--neutral-200);
+  border: none;
+  outline: 1px solid var(--neutral-600);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: var(--font-size);
+}
