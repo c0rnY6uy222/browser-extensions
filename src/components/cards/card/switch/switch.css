@@ -1,0 +1,23 @@
+.switch-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  padding: 2px;
+  background: var(--neutral-600);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.switch-slider {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--neutral-100);
+  border-radius: 15px;
+}
+
+#switch-active {
+  background: var(--red-500);
+  justify-content: end;
+}

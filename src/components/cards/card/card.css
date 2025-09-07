@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: space-between;
   min-width: 300px;
-  max-width: 30%;
   background: var(--neutral-800);
   padding: 15px;
   border-radius: 25px;
+  gap: 30px;
 }
 
 .card-top,
@@ -17,6 +17,11 @@
 
 .card-top {
   gap: 20px;
+}
+
+.card-top img {
+  width: 80px;
+  aspect-ratio: 1 / 1;
 }
 
 .card-bottom {
@@ -33,4 +38,10 @@
   padding: 15px;
   border-radius: 25px;
   font-size: var(--font-size);
+}
+
+.card-remove-btn:hover {
+  background: var(--red-400);
+  color: var(--neutral-800);
+  font-weight: var(--weight-500);
 }
