@@ -1,5 +1,3 @@
-import Switch from "./switch/Switch";
-
 import "./card.css";
 
 const Card = (props) => {
@@ -14,7 +12,15 @@ const Card = (props) => {
       </div>
       <div className="card-bottom">
         <button className="card-remove-btn">Remove</button>
-        <Switch isActive={props.isActive} />
+        <input
+          type="checkbox"
+          className="switch-input"
+          id={`switchBtn${props.num}`}
+          defaultChecked={props.isActive}
+        />
+        <label htmlFor={`switchBtn${props.num}`} className="switch-container">
+          <div className="switch-slider"></div>
+        </label>
       </div>
     </section>
   );

@@ -24,6 +24,7 @@ const Cards = () => {
           logo={card.logo}
           name={card.name}
           description={card.description}
+          num={key}
           isActive={card.isActive}
         />
       ))}

@@ -45,3 +45,35 @@
   color: var(--neutral-800);
   font-weight: var(--weight-500);
 }
+
+.switch-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  padding: 2px;
+  background: var(--neutral-600);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.switch-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.switch-slider {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--neutral-100);
+  border-radius: 15px;
+}
+
+.switch-input:checked + .switch-container {
+  background: var(--red-500);
+}
+
+.switch-input:checked + .switch-container {
+  justify-content: end;
+}
