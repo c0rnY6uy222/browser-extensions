@@ -14,34 +14,33 @@ const Filters = () => {
       <h1>Extensions List</h1>
 
       <section className="filters-btn-group">
-        <label>
-          <input
-            type="radio"
-            id="btnAll"
-            value="All"
-            checked={selected === "All"}
-            onChange={() => handleChange("All")}
-          />
+        <input
+          type="radio"
+          id="btnAll"
+          checked={selected === "All"}
+          onChange={() => handleChange("All")}
+        />
+        <label htmlFor="btnAll" className="filters-label">
           All
         </label>
-        <label>
-          <input
-            type="radio"
-            id="btnActive"
-            value="Active"
-            checked={selected === "Active"}
-            onChange={() => handleChange("Active")}
-          />
+
+        <input
+          type="radio"
+          id="btnActive"
+          checked={selected === "Active"}
+          onChange={() => handleChange("Active")}
+        />
+        <label htmlFor="btnActive" className="filters-label">
           Active
         </label>
-        <label>
-          <input
-            type="radio"
-            id="btnInactive"
-            value="Inactive"
-            checked={selected === "Inactive"}
-            onChange={() => handleChange("Inactive")}
-          />
+
+        <input
+          type="radio"
+          id="btnInactive"
+          checked={selected === "Inactive"}
+          onChange={() => handleChange("Inactive")}
+        />
+        <label htmlFor="btnInactive" className="filters-label">
           Inactive
         </label>
       </section>

@@ -9,30 +9,27 @@
 .filters-btn-group {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 5px;
 }
 
-.filters-btn-group label {
+.filters-label {
   background: var(--neutral-700);
   padding: 15px 20px;
   border-radius: 25px;
   cursor: pointer;
 }
 
-.filters-btn-group label input[type="radio"] {
-  display: none;
-}
-
-.filters-btn-group
-  label
-  input[type="radio"]:checked
-  + .filters-btn-group
-  label {
-  background: var(--red-500);
-}
-
-.filters-btn-group label:hover {
+.filters-label:hover {
   background: var(--neutral-600);
+}
+
+.filters-btn-group input {
+  position: absolute;
+  opacity: 0;
+}
+
+.filters-btn-group input:checked + .filters-label {
+  background: var(--red-500) !important;
 }
 
 @media screen and (width <= 375px) {
