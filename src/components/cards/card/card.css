@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-width: 300px;
+  max-width: 30%;
   background: var(--neutral-800);
   padding: 15px;
   border-radius: 25px;
@@ -76,4 +77,10 @@
 
 .switch-input:checked + .switch-container {
   justify-content: end;
+}
+
+@media screen and (width <= 800px) {
+  .card {
+    max-width: 100%;
+  }
 }

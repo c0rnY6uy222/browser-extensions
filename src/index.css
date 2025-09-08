@@ -60,6 +60,15 @@ body {
 }
 
 #root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: calc(100% - 300px);
   height: 100%;
+}
+
+@media screen and (width <= 800px) {
+  #root {
+    width: calc(100% - 200px);
+  }
 }
