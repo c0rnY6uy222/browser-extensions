@@ -21,6 +21,11 @@ nav {
   border-radius: 10px;
 }
 
+nav input {
+  position: absolute;
+  opacity: 0;
+}
+
 .nav-change-theme-btn:hover,
 .nav-change-theme-btn:focus {
   background: var(--neutral-600);
