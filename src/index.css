@@ -45,6 +45,21 @@ testing the full range of screen sizes from 320px to large screens. */
   --dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
 }
 
+:root[data-theme="light"] {
+  --neutral-0: hsl(227, 75%, 14%);
+  --neutral-100: hsl(226, 25%, 17%);
+  --neutral-200: hsl(225, 23%, 24%);
+  --neutral-300: hsl(226, 11%, 37%);
+  --neutral-600: hsl(0, 0%, 78%);
+  --neutral-700: hsl(217, 61%, 90%);
+  --neutral-800: hsl(0, 0%, 93%);
+  --neutral-900: hsl(200, 60%, 99%);
+}
+
+* {
+  transition: all 150ms ease-in-out;
+}
+
 body {
   margin: 0;
 
@@ -55,20 +70,24 @@ body {
   color: var(--neutral-100);
 
   font-family: "Noto Sans Regular";
-
-  transition: all 150ms ease-in-out;
 }
 
 #root {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: calc(100% - 300px);
+  padding: 0 300px;
+  width: 100%;
   height: 100%;
 }
 
 @media screen and (width <= 800px) {
+  body,
+  html {
+    width: 100%;
+  }
+
   #root {
-    width: calc(100% - 200px);
+    padding: 50px;
   }
 }

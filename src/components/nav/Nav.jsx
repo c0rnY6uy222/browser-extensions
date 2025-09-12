@@ -20,9 +20,11 @@ const Nav = () => {
           if (e.target.checked) {
             setTheme("light");
             localStorage.setItem("data-theme", "light");
+            document.documentElement.setAttribute("data-theme", "light");
           } else {
             setTheme("dark");
             localStorage.setItem("data-theme", "dark");
+            document.documentElement.setAttribute("data-theme", "dark");
           }
         }}
       />

@@ -67,7 +67,7 @@
 .switch-slider {
   height: 100%;
   aspect-ratio: 1 / 1;
-  background: var(--neutral-100);
+  background: hsl(0, 0%, 93%);
   border-radius: 15px;
 }
 

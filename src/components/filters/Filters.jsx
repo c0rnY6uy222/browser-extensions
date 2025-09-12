@@ -11,7 +11,7 @@ const Filters = () => {
 
   return (
     <section className="filters">
-      <h1>Extensions List</h1>
+      <h1 className="filters-title">Extensions List</h1>
 
       <section className="filters-btn-group">
         <input

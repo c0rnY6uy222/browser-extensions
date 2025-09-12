@@ -7,6 +7,10 @@
   margin: 15px 0;
 }
 
+.filters-title {
+  color: var(--neutral-200);
+}
+
 .filters-btn-group {
   display: flex;
   flex-direction: row;
