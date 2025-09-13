@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-width: 300px;
-  max-width: 30%;
+  width: 30%;
   background: var(--neutral-800);
   padding: 15px;
   border-radius: 25px;
@@ -36,7 +36,7 @@
   border: none;
   outline: 1px solid var(--neutral-600);
   cursor: pointer;
-  padding: 15px;
+  padding: 10px 15px;
   border-radius: 25px;
   font-size: var(--font-size);
 }
@@ -81,6 +81,6 @@
 
 @media screen and (width <= 800px) {
   .card {
-    max-width: 100%;
+    width: 100%;
   }
 }
