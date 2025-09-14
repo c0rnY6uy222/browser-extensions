@@ -14,6 +14,7 @@ nav {
 }
 
 .nav-change-theme-btn {
+  display: flex;
   border: none;
   cursor: pointer;
   background: var(--neutral-700);

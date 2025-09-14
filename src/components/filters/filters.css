@@ -18,8 +18,9 @@
 }
 
 .filters-label {
-  background: var(--neutral-700);
-  padding: 10px 15px;
+  background: var(--neutral-800);
+  padding: 10px 20px;
+  outline: 1px solid var(--neutral-700);
   border-radius: 25px;
   cursor: pointer;
 }
