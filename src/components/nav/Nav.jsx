@@ -7,7 +7,10 @@ import Moon from "../../assets/images/icon-moon.svg";
 import "./nav.css";
 
 const Nav = () => {
-  const globalTheme = localStorage.getItem("data-theme");
+  let globalTheme =
+    localStorage.getItem("data-theme") == null
+      ? document.documentElement.getAttribute("data-theme")
+      : localStorage.getItem("data-theme");
   const [theme, setTheme] = useState(globalTheme);
 
   return (
@@ -16,6 +19,7 @@ const Nav = () => {
       <input
         type="checkbox"
         id="changeThemeBtn"
+        defaultChecked={theme == "dark" ? false : true}
         onChange={(e) => {
           if (e.target.checked) {
             setTheme("light");
