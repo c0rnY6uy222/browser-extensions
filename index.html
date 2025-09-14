@@ -11,8 +11,6 @@
     <script type="module" src="/src/main.jsx"></script>
     <script>
       function setTheme() {
-        console.log(window.matchMedia("(prefers-color-scheme: dark)").matches);
-
         if (localStorage.getItem("data-theme") != null) {
           document.documentElement.setAttribute(
             "data-theme",

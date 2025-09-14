@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
+
 import Card from "./card/Card";
+import Filters from "./filters/Filters";
+
 import axios from "axios";
 
 import "./cards.css";
@@ -18,6 +21,8 @@ const Cards = () => {
 
   return (
     <main className="cards">
+      <Filters />
+
       {data.map((card, key) => (
         <Card
           key={key}
