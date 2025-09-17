@@ -3,18 +3,20 @@ import React, { useEffect, useState } from "react";
 import Card from "./card/Card";
 import Filters from "./filters/Filters";
 
-import axios from "axios";
-
 import "./cards.css";
+
+import Data from "/data.json?url";
 
 const Cards = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("/src/data.json")
+    fetch(Data)
       .then((response) => {
-        setData(response.data);
+        response.json();
+      })
+      .then((result) => {
+        console.log(result);
       })
       .catch((error) => alert(error));
   }, []);
